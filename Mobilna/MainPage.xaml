@@ -3,22 +3,73 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Mobilna.MainPage">
 
-    <StackLayout>
-        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
-            <Label Text="Welcome to Xamarin.Forms!" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
-        </Frame>
-        <Label Text="Start developing now" FontSize="Title" Padding="30,10,30,10"/>
-        <Label Text="Make changes to your XAML file and save to see your UI update in the running app with XAML Hot Reload. Give it a try!" FontSize="16" Padding="30,0,30,0"/>
-        <Label FontSize="16" Padding="30,24,30,0">
-            <Label.FormattedText>
-                <FormattedString>
-                    <FormattedString.Spans>
-                        <Span Text="Learn more at "/>
-                        <Span Text="https://aka.ms/xamarin-quickstart" FontAttributes="Bold"/>
-                    </FormattedString.Spans>
-                </FormattedString>
-            </Label.FormattedText>
-        </Label>
+    <StackLayout BackgroundColor="Beige">
+        <Label Text="Gra w kosci. Autor: 00000000000"
+           BackgroundColor="Brown"
+           TextColor="White"
+           FontSize="25"
+           Margin="0,10,0,10"/>
+
+        <Button Text="RZUĆ KOŚĆMI"
+            HorizontalOptions="CenterAndExpand"
+            BackgroundColor="Chocolate"
+            Margin="0,10,0,10"
+            Clicked="StartGame"/>
+
+        <StackLayout Orientation="Horizontal"
+                 BackgroundColor="White"
+                 Margin="0,10,0,10">
+
+            <Image x:Name="img0"
+               HeightRequest="60"
+               Margin="9"
+               Source="kostkaPyt.jpg"
+               />
+
+            <Image x:Name="img1"
+               HeightRequest="60"
+               Margin="9"
+               Source="kostkaPyt.jpg"
+               />
+
+            <Image x:Name="img2"
+               HeightRequest="60"
+               Margin="9"
+               Source="kostkaPyt.jpg"
+               />
+
+            <Image x:Name="img3"
+               HeightRequest="60"
+               Margin="9"
+               Source="kostkaPyt.jpg"
+               />
+
+            <Image x:Name="img4"
+               HeightRequest="60"
+               Margin="9"
+               Source="kostkaPyt.jpg"
+               />
+
+            <Image x:Name="img5"
+               HeightRequest="60"
+               Margin="9"
+               Source="kostkaPyt.jpg"
+               />
+        </StackLayout>
+
+        <Label x:Name="wynikLosowania"
+           HorizontalOptions="CenterAndExpand"
+           Margin="0,10,0,10"/>
+
+        <Label x:Name="wynikCalejGry"
+           Margin="0,10,0,10"
+           HorizontalOptions="CenterAndExpand"/>
+
+        <Button Text="RESETUJ WYNIK"
+            BackgroundColor="Chocolate"
+            HorizontalOptions="CenterAndExpand"
+            Margin="0,10,0,10"
+            Clicked="ResetGame"/>
     </StackLayout>
 
 </ContentPage>
